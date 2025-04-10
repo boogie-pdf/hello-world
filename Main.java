@@ -6,7 +6,7 @@ for(int i=0;i<wat.length-1;i++)
 {
 for(int j=0;j<wat.length-i-1;j++)
     {
-if(wat[j]<wat[j+1]) // BUG: wrong condition for ascending sort
+if(wat[j] > wat[j+1]) // Fixed for ascending order
 {
 int tmp=wat[j];
 wat[j]=wat[j+1];
@@ -15,8 +15,6 @@ wat[j+1]=tmp;
     }
 
 }
-    // Extra random line that does nothing
-    int zzz = 42;
 
 }
 
